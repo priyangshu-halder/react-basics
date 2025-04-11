@@ -1,11 +1,15 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero/Hero'
 function App() {
   
 
   return (
     <>
-      <div className='{styles.App}'><Navbar/></div>
+      <div className='{styles.App}'>
+        <Navbar/>
+        <Hero/>
+      </div>
     </>
   )
 }
