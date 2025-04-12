@@ -7,42 +7,18 @@ const Project = () => {
       id: 1,
       title: "E-commerce Platform",
       category: "Web Development",
-      image: "/path/to/project1.jpg", // You'll need to add actual images
       description: "A full-featured e-commerce platform with product listings, cart functionality, and secure checkout process.",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      demoLink: "https://project1-demo.com",
-      codeLink: "https://github.com/username/project1"
+      codeLink: ""
     },
     {
       id: 2,
       title: "Task Management App",
       category: "Web Application",
-      image: "/path/to/project2.jpg",
       description: "A productivity application that helps users organize tasks, set deadlines, and track progress.",
-      technologies: ["React", "Redux", "Firebase"],
-      demoLink: "https://project2-demo.com",
-      codeLink: "https://github.com/username/project2"
+      technologies: ["Django", "React", "MySQL"],
+      codeLink: ""
     },
-    {
-      id: 3,
-      title: "Weather Dashboard",
-      category: "API Integration",
-      image: "/path/to/project3.jpg",
-      description: "A weather application that provides real-time forecasts, historical data, and location-based weather information.",
-      technologies: ["JavaScript", "REST API", "Chart.js", "Geolocation API"],
-      demoLink: "https://project3-demo.com",
-      codeLink: "https://github.com/username/project3"
-    },
-    {
-      id: 4,
-      title: "Portfolio Website",
-      category: "UI/UX Design",
-      image: "/path/to/project4.jpg",
-      description: "A personal portfolio website showcasing skills, projects, and professional experience.",
-      technologies: ["React", "CSS Modules", "Framer Motion"],
-      demoLink: "https://project4-demo.com",
-      codeLink: "https://github.com/username/project4"
-    }
   ];
 
   return (
@@ -54,29 +30,6 @@ const Project = () => {
         <div className={styles.projectsGrid}>
           {projectsData.map(project => (
             <div key={project.id} className={styles.projectCard}>
-              <div className={styles.projectImage}>
-                <img src={project.image} alt={project.title} />
-                <div className={styles.projectOverlay}>
-                  <div className={styles.projectLinks}>
-                    <a 
-                      href={project.demoLink} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className={styles.projectLink}
-                    >
-                      Live Demo
-                    </a>
-                    <a 
-                      href={project.codeLink} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className={styles.projectLink}
-                    >
-                      View Code
-                    </a>
-                  </div>
-                </div>
-              </div>
               <div className={styles.projectInfo}>
                 <span className={styles.projectCategory}>{project.category}</span>
                 <h3 className={styles.projectTitle}>{project.title}</h3>
@@ -86,6 +39,16 @@ const Project = () => {
                     <span key={index} className={styles.techTag}>{tech}</span>
                   ))}
                 </div>
+                {project.codeLink && (
+                  <a 
+                    href={project.codeLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.codeLink}
+                  >
+                    GitHub Repository
+                  </a>
+                )}
               </div>
             </div>
           ))}
