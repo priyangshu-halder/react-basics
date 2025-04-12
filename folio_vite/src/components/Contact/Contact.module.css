@@ -1,0 +1,148 @@
+/* Contact.module.css */
+
+.contact {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sectionSubtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 2.5rem;
+  }
+  
+  .contactWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+  
+  .contactInfo {
+    flex: 1 1 300px;
+  }
+  
+  .infoItem {
+    margin-bottom: 1.5rem;
+  }
+  
+  .infoTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .infoContent {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .socialLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .socialLink {
+    color: #4a90e2;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .socialLink:hover {
+    color: #1a5bb8;
+  }
+  
+  .contactForm {
+    flex: 1 1 450px;
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .formLabel {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .formControl {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formControl:focus {
+    border-color: #4a90e2;
+  }
+  
+  .submitBtn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitBtn:hover {
+    background-color: #3c78c3;
+  }
+  
+  .formMessage {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    padding: 0.75rem;
+    border-radius: 6px;
+  }
+  
+  .success {
+    background-color: #e6f9e6;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+  }
+  
+  .error {
+    background-color: #ffe5e5;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .contactWrapper {
+      flex-direction: column;
+    }
+  }
+  
