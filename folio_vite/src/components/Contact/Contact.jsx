@@ -52,12 +52,12 @@ const Contact = () => {
                     <div className={styles.contactInfo}>
                         <div className={styles.infoItem}>
                             <h4 className={styles.infoTitle}>Email</h4>
-                            <p className={styles.infoContent}>hello@example.com</p>
+                            <p className={styles.infoContent}>contact.priyangshu.work@gmail.com</p>
                         </div>
 
                         <div className={styles.infoItem}>
                             <h4 className={styles.infoTitle}>Location</h4>
-                            <p className={styles.infoContent}>San Francisco, CA</p>
+                            <p className={styles.infoContent}>Kolkata, West Bengal</p>
                         </div>
 
                         <div className={styles.infoItem}>
